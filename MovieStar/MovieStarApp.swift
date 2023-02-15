@@ -6,13 +6,20 @@
 //
 
 import SwiftUI
-import MSNetwork
+import MSStyle
 
 @main
 struct MovieStarApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+  
+  init() {
+    MSStyle.registerFonts()
+  }
+  
+  var body: some Scene {
+    WindowGroup {
+      NavigationStack {
+        ContentView(model: .init())
+      }
     }
+  }
 }

@@ -15,6 +15,9 @@
 		849C1C1A298CB5DE00916E35 /* MovieStarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849C1C19298CB5DE00916E35 /* MovieStarUITests.swift */; };
 		849C1C1C298CB5DE00916E35 /* MovieStarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849C1C1B298CB5DE00916E35 /* MovieStarUITestsLaunchTests.swift */; };
 		849C1C29298CB69700916E35 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849C1C28298CB69700916E35 /* Secrets.swift */; };
+		84A4B80A2995CF690072B4B0 /* MSDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 84A4B8092995CF690072B4B0 /* MSDomain */; };
+		84E1E889298D101900CFDC01 /* MSNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = 84E1E888298D101900CFDC01 /* MSNetwork */; };
+		84E1E88C298D174200CFDC01 /* MSStyle in Frameworks */ = {isa = PBXBuildFile; productRef = 84E1E88B298D174200CFDC01 /* MSStyle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +63,7 @@
 		849C1C1B298CB5DE00916E35 /* MovieStarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieStarUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		849C1C28298CB69700916E35 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		849C1C2A298CB97300916E35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		84A91A0D298CC85600BC2943 /* movie-star */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "movie-star"; sourceTree = "<group>"; };
+		84E1E88A298D16E100CFDC01 /* MovieStarKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = MovieStarKit; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A4B80A2995CF690072B4B0 /* MSDomain in Frameworks */,
+				84E1E88C298D174200CFDC01 /* MSStyle in Frameworks */,
+				84E1E889298D101900CFDC01 /* MSNetwork in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,7 +97,7 @@
 		849C1BF2298CB5DC00916E35 = {
 			isa = PBXGroup;
 			children = (
-				84A91A0D298CC85600BC2943 /* movie-star */,
+				84E1E88A298D16E100CFDC01 /* MovieStarKit */,
 				849C1BFD298CB5DC00916E35 /* MovieStar */,
 				849C1C0E298CB5DE00916E35 /* MovieStarTests */,
 				849C1C18298CB5DE00916E35 /* MovieStarUITests */,
@@ -173,6 +179,9 @@
 			);
 			name = MovieStar;
 			packageProductDependencies = (
+				84E1E888298D101900CFDC01 /* MSNetwork */,
+				84E1E88B298D174200CFDC01 /* MSStyle */,
+				84A4B8092995CF690072B4B0 /* MSDomain */,
 			);
 			productName = MovieStar;
 			productReference = 849C1BFB298CB5DC00916E35 /* MovieStar.app */;
@@ -453,7 +462,6 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MovieStar/Info.plist;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -483,7 +491,6 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MovieStar/Info.plist;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -617,6 +624,21 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		84A4B8092995CF690072B4B0 /* MSDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MSDomain;
+		};
+		84E1E888298D101900CFDC01 /* MSNetwork */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MSNetwork;
+		};
+		84E1E88B298D174200CFDC01 /* MSStyle */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MSStyle;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 849C1BF3298CB5DC00916E35 /* Project object */;
 }
